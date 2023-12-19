@@ -22,7 +22,7 @@ class StudentController {
       students.push(nama);
 
       const data = {
-        message : `Menambahkan data student : $(nama)`,
+        message : `Menambahkan data student : ${nama}`,
         data : students
       };
 
@@ -38,7 +38,7 @@ class StudentController {
       students[id] = nama;
 
       const data = {
-        message : `Mengedit data student id $(id), nama $(nama)`,
+        message : `Mengedit data student id ${id}, nama ${nama}`,
         data : students
       }
       res.json(data);
@@ -54,7 +54,7 @@ class StudentController {
       students.splice(id,1);
 
       const data = {
-        message : `menghapus data student $(id)`,
+        message : `Menghapus data students ${id}`,
         data : students
       };
 
